@@ -7,7 +7,7 @@ class PickleService:
     Classe para acelerar a utilização da serialização
     by: Henrique Spencer Albuquerque
     """
-    def init(self):
+    def __init__(self):
         arq = os.path.abspath(inspect.getfile(self.__class__))
         self.diretorio_atual = os.path.join(os.path.dirname(arq), 'pickle_files')
         #self.diretorio_atual = os.path.dirname(arq)
@@ -37,10 +37,15 @@ class PickleService:
             print(e)
             return False
 
-if name == '__main__':
+    def __str__(self):
+        return f'PickleService( ' \
+               f'\nObjectId: {id(self)}' \
+               f'\nDiretorio de salvamento: {self.diretorio_atual}' \
+               f')'
+
+
+if __name__ == "__main__":
     df_test = 'sfgg sdff'
-    import pandas as pd
     PickleService().serialize(file_name='df_testt', variavel=df_test)
-    # PickleService().serialize(df_relatorio1, 'df_relatorio1', acao='wb', file_version='_v1')
-    # df_relatorio1 = PickleService().serialize('', 'df_relatorio1', acao='rb', file_version='_v1')
+    PickleService().serialize(file_name='df_testt')
 

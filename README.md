@@ -1,12 +1,10 @@
 # picklify
-lib python para facilitar o uso de arquivos pickle no python 
-
-- ##### Para que serve ?
-    - A lib picklify serve para facilitar o uso de arquivos pickle no python sem ficar se preocupando onde eles estão sendo salvos e nem de qual local eles estão sendo chamados.
+Facilitar o uso de arquivos pickle no python sem se preocupar onde estão sendo salvos e nem de qual local eles estão sendo chamados.
+ 
 - ##### Como funciona ?
-    - A lib picklify cria um diretório chamado pickle_files dentro da venv do projeto e salva todos os arquivos pickle nesse diretório, e para deserializar um arquivo pickle basta chamar o método serialize e passar o nome do arquivo que deseja deserializar.
-    - Para serializar um arquivo pickle basta chamar o método serialize e passar o nome do arquivo e a variavel que deseja serializar.
-    - Ja Para deserializar um arquivo pickle basta chamar o método serialize e passar o nome do arquivo que deseja deserializar.
+   - A lib picklify cria um diretório chamado pickle_files dentro da venv do projeto e salva todos os arquivos pickle nesse diretório, e para deserializar um arquivo pickle basta chamar o método serialize e passar o nome do arquivo que deseja deserializar;
+   - Para serializar basta chamar o método serialize e passar o nome como deseja salvar e a variavel/valor que deseja serializar;
+   - Ja para deserializar basta chamar o método serialize e passar apenas o nome ja salvo anteriormente.
 - ##### Qual é a utilidade e porque não usar a biblioteca pickle diretamente ?
     - A utilidade é que a lib picklify facilita o uso de arquivos pickle no python, sem ficar se preocupando onde eles estão sendo salvos e nem de qual local eles estão sendo chamados.
 - ##### Exemplos de uso:

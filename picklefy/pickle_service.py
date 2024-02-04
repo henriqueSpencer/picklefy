@@ -2,7 +2,7 @@ import pickle
 import os
 import inspect
 
-class PickleService:
+class PickleFy:
     """
     Classe para acelerar a utilização da serialização
     by: Henrique Spencer Albuquerque
@@ -14,7 +14,6 @@ class PickleService:
 
     def serialize(self, file_name: str, variavel=None):
         """
-
         @param file_name: é o nome do arquivo que voce quer salvar ou quer pegar
         @param variavel: é o conteudo que deve ser salvo, caso não seja passado nada quer dizer q voce esta apenas buscando um arquivo
         @return:
@@ -38,14 +37,14 @@ class PickleService:
             return False
 
     def __str__(self):
-        return f'PickleService( ' \
-               f'\nObjectId: {id(self)}' \
-               f'\nDiretorio de salvamento: {self.diretorio_atual}' \
-               f')'
+        return f'PickleFy( ' \
+               f'\n     ObjectId: {id(self)}' \
+               f'\n     Diretorio de salvamento: {self.diretorio_atual}' \
+               f'\n)'
 
 
 if __name__ == "__main__":
-    df_test = 'sfgg sdff'
-    PickleService().serialize(file_name='df_testt', variavel=df_test)
-    PickleService().serialize(file_name='df_testt')
+    variavel = 'Ola Mundo'
+    PickleFy().serialize(file_name='test', variavel=variavel)
+    PickleFy().serialize(file_name='test')
 

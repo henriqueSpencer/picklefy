@@ -1,4 +1,4 @@
-# PickliFy
+# PickleFy
 Facilitar o uso de arquivos pickle no python sem se preocupar onde estão sendo salvos e nem de qual local eles estão sendo chamados.
  
 - ##### Como funciona ?
@@ -13,7 +13,7 @@ Facilitar o uso de arquivos pickle no python sem se preocupar onde estão sendo 
 
 ## Instalação
 ```
-pip install picklify
+pip install picklefy
 ```
 ## Como utilizar?
 - ##### Serializando uma variavel
